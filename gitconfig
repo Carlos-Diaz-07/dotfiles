@@ -49,3 +49,6 @@
 
 [pull]
   rebase = false
+[user]
+	email = diazmelian.carlos@gmail.com
+	name = carlos diaz melian
