@@ -1,81 +1,191 @@
 {
-    "[python]": {
-        "editor.bracketPairColorization.enabled": false,
-        "editor.guides.bracketPairs": false,
-        "editor.tabSize": 4
-    },
-    "editor.bracketPairColorization.enabled": true,
-    "editor.detectIndentation": false,
-    "editor.fontSize": 14,
-    "editor.guides.bracketPairs": true,
-    "editor.minimap.enabled": false,
-    "editor.multiCursorModifier": "ctrlCmd",
-    "editor.renderControlCharacters": true,
-    "editor.rulers": [
-        80,
-        120
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[ruby]": {
+    "editor.defaultFormatter": "ms-vsliveshare.vsliveshare"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "emmet.syntaxProfiles": {
+    "javascript": "jsx"
+  },
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "files.associations": {
+    "*.js": "javascriptreact",
+    "*.html.erb": "erb"
+  },
+  "editor.bracketPairColorization.enabled": true,
+  "editor.detectIndentation": false,
+  "editor.fontSize": 14,
+  "editor.guides.bracketPairs": true,
+  "editor.minimap.enabled": false,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.renderControlCharacters": true,
+  "editor.rulers": [
+      80,
+      120
+  ],
+  "editor.showFoldingControls": "always",
+  "editor.snippetSuggestions": "top",
+  "editor.tabSize": 2,
+  "emmet.includeLanguages": {
+      "erb": "html"
+  },
+  "emmet.showSuggestionsAsSnippets": true,
+  "emmet.triggerExpansionOnTab": true,
+  "explorer.confirmDelete": false,
+  "files.exclude": {
+      "__pycache__": true,
+      "_site": true,
+      ".asset-cache": true,
+      ".bundle": true,
+      ".ipynb_checkpoints": true,
+      ".pytest_cache": true,
+      ".sass-cache": true,
+      ".svn": true,
+      "**/.DS_Store": true,
+      "**/.egg-info": true,
+      "**/.git": true,
+      "build": true,
+      "coverage": true,
+      "dist": true,
+      "log": true,
+      "node_modules": true,
+      "public/packs": true,
+      "tmp": true
+  },
+  "files.hotExit": "off",
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "files.watcherExclude": {
+      "**/audits/**": true,
+      "**/coverage/**": true,
+      "**/log/**": true,
+      "**/node_modules/**": true,
+      "**/tmp/**": true,
+      "**/vendor/**": true
+  },
+  "notebook.diff.ignoreMetadata": true,
+  "notebook.lineNumbers": "on",
+  "notebook.markup.fontSize": 13,
+  "ruby.lint": {
+      "rubocop": true
+  },
+  "telemetry.telemetryLevel": "off",
+  "window.restoreWindows": "none",
+  "workbench.editor.enablePreview": true,
+  "workbench.iconTheme": "vscode-great-icons",
+  "workbench.settings.editor": "json",
+  "workbench.settings.openDefaultSettings": true,
+  "workbench.settings.useSplitJSON": true,
+  "workbench.startupEditor": "newUntitledFile",
+  "json.maxItemsComputed": 500000,
+  "prettier.printWidth": 120,
+  "prettier.trailingComma": "none",
+  "prettier.semi": false,
+  "prettier.singleQuote": true,
+  "prettier.jsxSingleQuote": true,
+  "eslint.rules.customizations": [{
+    "parser": "babel-eslint",
+    "extends": [
+      "standard",
+      "standard-react"
     ],
-    "editor.showFoldingControls": "always",
-    "editor.snippetSuggestions": "top",
-    "editor.tabSize": 2,
-    "emmet.includeLanguages": {
-        "erb": "html"
+    "env": {
+      "es6": true
     },
-    "emmet.showSuggestionsAsSnippets": true,
-    "emmet.triggerExpansionOnTab": true,
-    "explorer.confirmDelete": false,
-    "files.exclude": {
-        "__pycache__": true,
-        "_site": true,
-        ".asset-cache": true,
-        ".bundle": true,
-        ".ipynb_checkpoints": true,
-        ".pytest_cache": true,
-        ".sass-cache": true,
-        ".svn": true,
-        "**/.DS_Store": true,
-        "**/.egg-info": true,
-        "**/.git": true,
-        "build": true,
-        "coverage": true,
-        "dist": true,
-        "log": true,
-        "node_modules": true,
-        "public/packs": true,
-        "tmp": true
+    "plugins": [
+      "react"
+    ],
+    "parserOptions": {
+      "sourceType": "module"
     },
-    "files.hotExit": "off",
-    "files.insertFinalNewline": true,
-    "files.trimFinalNewlines": true,
-    "files.trimTrailingWhitespace": true,
-    "files.watcherExclude": {
-        "**/audits/**": true,
-        "**/coverage/**": true,
-        "**/log/**": true,
-        "**/node_modules/**": true,
-        "**/tmp/**": true,
-        "**/vendor/**": true
-    },
-    "git.enabled": false,
-    "notebook.diff.ignoreMetadata": true,
-    "notebook.lineNumbers": "on",
-    "notebook.markup.fontSize": 13,
-    "python.defaultInterpreterPath": "~/.pyenv/shims/python",
-    "python.formatting.provider": "yapf",
-    "python.languageServer": "Pylance",
-    "python.linting.enabled": false,
-    "python.linting.flake8Enabled": false,
-    "python.linting.pylintEnabled": false,
-    "python.terminal.activateEnvironment": false,
-    "ruby.lint": {
-        "rubocop": true
-    },
-    "telemetry.telemetryLevel": "off",
-    "window.restoreWindows": "none",
-    "workbench.editor.enablePreview": true,
-    "workbench.iconTheme": "vscode-great-icons",
-    "workbench.settings.editor": "json",
-    "workbench.settings.openDefaultSettings": true,
-    "workbench.settings.useSplitJSON": true,
-    "workbench.startupEditor": "newUntitledFile"
+    "rules": {
+      // don't force es6 functions to include space before paren
+      "space-before-function-paren": 0,
+      // allow specifying true explicitly for boolean props
+      "react/jsx-boolean-value": 0,
+      "react/prop-types": 0
+    }
+  }
+],
+"files.autoSave": "afterDelay",
+"editor.inlineSuggest.enabled": true,
+"diffEditor.ignoreTrimWhitespace": false,
+"[html]": {
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+},
+"git.autofetch": true,
+"github.copilot.enable": {
+  "*": true,
+  "yaml": true,
+  "plaintext": false,
+  "markdown": false
+},
+"[javascript]": {
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+},
+"git.confirmSync": false,
+"cSpell.userWords": [
+  "automerge",
+  "cabra",
+  "dems",
+  "fontawesome",
+  "fortawesome",
+  "goathead",
+  "graphcache",
+  "Influencers",
+  "msapplication",
+  "nextra",
+  "nojekyll",
+  "noreply",
+  "npmrc",
+  "organisation",
+  "Pers",
+  "tiktok",
+  "urql"
+],
+"[typescript]": {
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+},
+"javascript.updateImportsOnFileMove.enabled": "always",
+"workbench.colorTheme": "Mayukai Mirage Gruvbox Darktooth"
+  // "parser": "babel-eslint",
+  // "extends": [
+  //   "standard",
+  //   "standard-react"
+  // ],
+  // "env": {
+  //   "es6": true
+  // },
+  // "plugins": [
+  //   "react"
+  // ],
+  // "parserOptions": {
+  //   "sourceType": "module"
+  // },
+  // "rules": {
+  //   // don't force es6 functions to include space before paren
+  //   "space-before-function-paren": 0,
+  //   // allow specifying true explicitly for boolean props
+  //   "react/jsx-boolean-value": 0,
+  //   "react/prop-types": 0
+  // },
+  // "semi": false,
+  // "trailingComma": "none",
+  // "printWidth": 110,
+  // "tabWidth": 2,
+  // "useTabs": false,
+  // "singleQuote": true,
+  // "jsxSingleQuote": true
+
 }
