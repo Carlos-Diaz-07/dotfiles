@@ -54,6 +54,6 @@
   defaultBranch = master
 [user]
 	email = diazmelian.carlos@gmail.com
-	name = carlos
+	name = Carlos Diaz
 [diff]
 	submodule = log
