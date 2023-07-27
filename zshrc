@@ -70,4 +70,4 @@ export EDITOR=code
 
 # Set ipdb as the default Python debugger
 export PYTHONBREAKPOINT=ipdb.set_trace
-redis-server ~carlos.diaz/code/Carlos-Diaz-07/dotfiles/redis.conf
+redis-server
