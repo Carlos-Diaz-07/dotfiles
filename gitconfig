@@ -54,8 +54,8 @@
 [init]
   defaultBranch = master
 [user]
-	email = 72442639+Carlos-Diaz-07@users.noreply.github.com
-	name = Carlos Diaz
+	email = diazmelian.carlos@gmail.com
+	name = carlos diaz
 [diff]
 	submodule = log
 [filter "lfs"]

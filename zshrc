@@ -71,6 +71,7 @@ export EDITOR=code
 export PYTHONBREAKPOINT=ipdb.set_trace
 redis-server
 alias nrd='npm run dev'
+
 alias nrtw='npm run tw'
 alias nrte='npm run tests'
 alias rs='rails s'
@@ -84,3 +85,4 @@ alias gpusho='git push origin'
 alias gco='git co'
 alias gcob='git co -b'
 export PATH="/opt/homebrew/opt/postgresql@16/bin:$PATH"
+
