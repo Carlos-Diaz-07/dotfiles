@@ -37,6 +37,7 @@
 
   # Removes a file from the index
   unstage = reset HEAD --
+	ttokens = !node ./utils/customTransformer.js
 
 [help]
   autocorrect = 1
@@ -53,7 +54,14 @@
 [init]
   defaultBranch = master
 [user]
-	email = diazmelian.carlos@gmail.com
+	email = 72442639+Carlos-Diaz-07@users.noreply.github.com
 	name = Carlos Diaz
 [diff]
 	submodule = log
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+[rerere]
+	enabled = true

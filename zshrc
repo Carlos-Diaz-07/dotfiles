@@ -67,7 +67,20 @@ export LC_ALL=en_US.UTF-8
 
 export BUNDLER_EDITOR=code
 export EDITOR=code
-
 # Set ipdb as the default Python debugger
 export PYTHONBREAKPOINT=ipdb.set_trace
 redis-server
+alias nrd='npm run dev'
+alias nrtw='npm run tw'
+alias nrte='npm run tests'
+alias rs='rails s'
+alias r='rails'
+alias rc='rails c'
+alias ni='npm i'
+alias nui='npm uninstall'
+alias nic='npm i @ibex-goat/cabra@latest'
+alias gpullo='git pull origin'
+alias gpusho='git push origin'
+alias gco='git co'
+alias gcob='git co -b'
+export PATH="/opt/homebrew/opt/postgresql@16/bin:$PATH"

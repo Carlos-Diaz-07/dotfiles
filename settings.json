@@ -196,7 +196,8 @@
     "name": "Vue Green",
     "value": "#42b883"
   }
-]
+],
+"workbench.preferredHighContrastColorTheme": "Shades of Purple (Super Dark)"
   // "parser": "babel-eslint",
   // "extends": [
   //   "standard",
