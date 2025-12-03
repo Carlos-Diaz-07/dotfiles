@@ -1,0 +1,59 @@
+# AeroSpace Configuration
+# Place this file at ~/.aerospace.toml
+
+# General settings
+enable-normalization-flatten-containers = true
+enable-normalization-opposite-orientation-for-nested-containers = true
+
+# Start AeroSpace at login
+start-at-login = true
+
+# Default root container layout
+default-root-container-layout-on-startup = 'tiles'
+
+# Gaps between windows
+[gaps]
+inner.horizontal = 5
+inner.vertical = 5
+outer.left = 5
+outer.bottom = 5
+outer.top = 5
+outer.right = 5
+
+# Key mappings
+[mode.main.binding]
+
+# Layout/Mode activations
+cmd-shift-# = 'layout floating'  # Floating layout
+cmd-shift-e = 'layout accordion horizontal'  # 3Column Middle (using accordion as closest match)
+cmd-shift-d = 'fullscreen'  # Fullscreen
+cmd-shift-slash = 'layout tiles vertical'  # Column layout
+cmd-shift-j = 'layout tiles horizontal'  # Two Pane layout
+
+# Expand and shrink main pane
+cmd-shift-l = 'resize width +50'  # Expand main pane
+cmd-shift-h = 'resize width -50'  # Shrink main pane
+
+# Swap focus window clockwise
+cmd-shift-c = 'focus right'  # Move focus clockwise (right)
+
+# Swap main window with focused window
+cmd-shift-p = 'move-node-to-workspace --wrap-around next'  # Swap with main
+
+# Throw focused window to spaces 1, 2, and 3
+cmd-shift-1 = 'move-node-to-workspace 1'  # Throw to space 1
+cmd-shift-2 = 'move-node-to-workspace 2'  # Throw to space 2
+cmd-shift-3 = 'move-node-to-workspace 3'  # Throw to space 3
+
+# Focus spaces (bonus - useful for navigation)
+cmd-1 = 'workspace 1'
+cmd-2 = 'workspace 2'
+cmd-3 = 'workspace 3'
+
+# Additional useful shortcuts
+cmd-shift-space = 'layout floating tiling toggle'  # Toggle floating/tiling
+
+# Workspaces configuration
+[[on-window-detected]]
+if.app-id = 'com.apple.finder'
+run = 'layout tiles'

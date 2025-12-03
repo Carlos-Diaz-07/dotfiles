@@ -83,7 +83,7 @@
   "telemetry.telemetryLevel": "off",
   "window.restoreWindows": "none",
   "workbench.editor.enablePreview": true,
-  "workbench.iconTheme": "vscode-great-icons",
+  "workbench.iconTheme": "vscode-icons",
   "workbench.settings.editor": "json",
   "workbench.settings.openDefaultSettings": true,
   "workbench.settings.useSplitJSON": true,
@@ -164,6 +164,10 @@
     "name": "Angular Red",
     "value": "#dd0531"
   },
+   {
+    "name": "Rails Red",
+    "value": "#CC0000"
+  }
   {
     "name": "Azure Blue",
     "value": "#007fff"
@@ -197,7 +201,10 @@
     "value": "#42b883"
   }
 ],
-"workbench.preferredHighContrastColorTheme": "Shades of Purple (Super Dark)"
+"workbench.preferredHighContrastColorTheme": "Shades of Purple (Super Dark)",
+"settingsSync.ignoredExtensions": [
+
+]
   // "parser": "babel-eslint",
   // "extends": [
   //   "standard",
