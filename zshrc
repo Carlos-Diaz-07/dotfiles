@@ -86,3 +86,12 @@ alias gco='git co'
 alias gcob='git co -b'
 export PATH="/opt/homebrew/opt/postgresql@16/bin:$PATH"
 
+export PATH="$HOME/.local/bin:$PATH"
+
+# Ollama models
+alias claude-qwen32='ANTHROPIC_AUTH_TOKEN=ollama ANTHROPIC_BASE_URL=http://172.31.208.1:11434 ANTHROPIC_API_KEY="" claude --model qwen2.5-coder:32b-instruct-q4_K_M'
+alias claude-qwen14='ANTHROPIC_AUTH_TOKEN=ollama ANTHROPIC_BASE_URL=http://172.31.208.1:11434 ANTHROPIC_API_KEY="" claude --model qwen2.5-coder:14b'
+alias claude-qwen7='ANTHROPIC_AUTH_TOKEN=ollama ANTHROPIC_BASE_URL=http://172.31.208.1:11434 ANTHROPIC_API_KEY="" claude --model qwen2.5-coder:7b'
+alias claude-deepseek='ANTHROPIC_AUTH_TOKEN=ollama ANTHROPIC_BASE_URL=http://172.31.208.1:11434 ANTHROPIC_API_KEY="" claude --model deepseek-r1:14b'
+alias claude-llama='ANTHROPIC_AUTH_TOKEN=ollama ANTHROPIC_BASE_URL=http://172.31.208.1:11434 ANTHROPIC_API_KEY="" claude --model llama3.1:8b'
+alias claude-gemma='ANTHROPIC_AUTH_TOKEN=ollama ANTHROPIC_BASE_URL=http://172.31.208.1:11434 ANTHROPIC_API_KEY="" claude --model gemma3:4b'
