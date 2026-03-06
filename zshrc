@@ -95,3 +95,9 @@ alias claude-qwen7='ANTHROPIC_AUTH_TOKEN=ollama ANTHROPIC_BASE_URL=http://172.31
 alias claude-deepseek='ANTHROPIC_AUTH_TOKEN=ollama ANTHROPIC_BASE_URL=http://172.31.208.1:11434 ANTHROPIC_API_KEY="" claude --model deepseek-r1:14b'
 alias claude-llama='ANTHROPIC_AUTH_TOKEN=ollama ANTHROPIC_BASE_URL=http://172.31.208.1:11434 ANTHROPIC_API_KEY="" claude --model llama3.1:8b'
 alias claude-gemma='ANTHROPIC_AUTH_TOKEN=ollama ANTHROPIC_BASE_URL=http://172.31.208.1:11434 ANTHROPIC_API_KEY="" claude --model gemma3:4b'
+
+alias kllama='curl -s http://172.31.208.1:11434/api/generate -d "{\"model\":\"\",\"keep_alive\":0}" > /dev/null && echo "Models unloaded"'
+
+# Android SDK
+export ANDROID_HOME=$HOME/android-sdk
+export PATH=$ANDROID_HOME/cmdline-tools/latest/bin:$ANDROID_HOME/platform-tools:$ANDROID_HOME/emulator:$PATH
