@@ -11,7 +11,7 @@
 
 [core]
   pager = less -FRSX
-  editor = code --wait
+  # Uses $EDITOR env var set in zshrc (code on macOS, codium on Linux)
 
 [alias]
   co = checkout

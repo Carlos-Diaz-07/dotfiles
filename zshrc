@@ -65,11 +65,18 @@ export PATH="./bin:./node_modules/.bin:${PATH}:/usr/local/sbin"
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
-export BUNDLER_EDITOR=code
-export EDITOR=code
+# Editor: use codium on Linux, code on macOS
+if [[ `uname` =~ "Darwin" ]]; then
+  export BUNDLER_EDITOR=code
+  export EDITOR="code --wait"
+else
+  export BUNDLER_EDITOR=codium
+  export EDITOR="codium --wait"
+  alias code='codium'
+fi
 # Set ipdb as the default Python debugger
 export PYTHONBREAKPOINT=ipdb.set_trace
-redis-server
+[[ `uname` =~ "Darwin" ]] && redis-server &>/dev/null &
 alias nrd='npm run dev'
 
 alias nrtw='npm run tw'

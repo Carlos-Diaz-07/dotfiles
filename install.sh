@@ -48,9 +48,12 @@ if [[ `uname` =~ "Darwin" ]]; then
   CODE_PATH=~/Library/Application\ Support/Code/User
 # Else, it's a Linux
 else
-  CODE_PATH=~/.config/Code/User
-  # If this folder doesn't exist, it's a WSL
-  if [ ! -e $CODE_PATH ]; then
+  # Check for VSCodium first, then VS Code, then WSL
+  if [ -d ~/.config/VSCodium/User ]; then
+    CODE_PATH=~/.config/VSCodium/User
+  elif [ -d ~/.config/Code/User ]; then
+    CODE_PATH=~/.config/Code/User
+  else
     CODE_PATH=~/.vscode-server/data/Machine
   fi
 fi
